@@ -1,0 +1,158 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f4f4f4;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  margin-left: 250px;
+  padding: 20px;
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-bottom: 1rem;
+  padding-left: 20px;
+}
+
+/* Form styles */
+form {
+  margin-top: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Utility classes */
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.social-links a {
+  color: #007bff;
+}
+
+/* Sidebar toggle button */
+#sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav {
+    transform: translateX(-100%);
+  }
+
+  nav.active {
+    transform: translateX(0);
+  }
+
+  main {
+    margin-left: 0;
+    padding-top: 60px;
+  }
+
+  #sidebar-toggle {
+    display: block;
+  }
+}

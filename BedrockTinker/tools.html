@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools | BedrockTinker</title>
+    <meta name="description" content="Minecraft Bedrock addon creation tools coming soon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="sidebar-toggle">☰</button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="wikipedia.html">Wikipedia</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Tools</h1>
+        <p>
+            Our tools section is coming soon! We're working hard to bring you a comprehensive set of tools to enhance your Minecraft Bedrock addon creation experience.
+        </p>
+        <p>
+            Stay tuned for updates – we’ll let you know when new downloads are available!
+        </p>
+    </main>
+    <script>
+        const sidebarToggle = document.getElementById('sidebar-toggle');
+        const nav = document.querySelector('nav');
+
+        sidebarToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
